@@ -282,3 +282,61 @@ font-size:34px;
 
     opacity:.8;
 }
+
+
+/* Countdown */
+
+.countdown{
+
+    padding:120px 30px;
+
+    text-align:center;
+}
+
+.countdown h2{
+
+    font-size:42px;
+
+    color:#c8a98a;
+
+    margin-bottom:50px;
+}
+
+#countdown{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+.count-box{
+
+    width:120px;
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:24px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+}
+
+.count-box span{
+
+    display:block;
+
+    font-size:42px;
+
+    color:#8d7865;
+}
+
+.count-box small{
+
+    font-size:16px;
+}
