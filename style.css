@@ -1,0 +1,120 @@
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#FAF7F2;
+    color:#5C5148;
+    font-family:"Microsoft JhengHei",sans-serif;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.25),
+        rgba(0,0,0,.25)
+    ),
+    url("images/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.hero-content{
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.5;
+    font-weight:300;
+}
+
+.hero-date{
+    margin-top:24px;
+    font-size:24px;
+    letter-spacing:4px;
+}
+
+.scroll{
+    margin-top:40px;
+    opacity:.8;
+}
+
+.invitation{
+
+    background:white;
+    padding:80px 24px;
+    text-align:center;
+}
+
+.invitation h2{
+    font-size:38px;
+    margin-bottom:30px;
+    color:#B79E85;
+}
+
+.invitation p{
+    line-height:2;
+    max-width:600px;
+    margin:auto;
+}
+
+.story{
+
+    padding:80px 24px;
+}
+
+.story h2{
+
+    text-align:center;
+    margin-bottom:40px;
+    color:#B79E85;
+}
+
+.story-grid{
+
+    display:grid;
+    grid-template-columns:1fr;
+    gap:24px;
+}
+
+.story-card{
+
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.story-card img{
+    width:100%;
+    display:block;
+}
+
+.story-card h3{
+    text-align:center;
+    padding:16px;
+}
+
+@media(min-width:768px){
+
+.story-grid{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
+
+</style>
