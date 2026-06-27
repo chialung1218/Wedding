@@ -1,19 +1,28 @@
-<style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-body{
-    background:#FAF7F2;
-    color:#5C5148;
-    font-family:"Microsoft JhengHei",sans-serif;
+html{
+    scroll-behavior:smooth;
 }
+
+body{
+    background:#faf7f2;
+    color:#5f5348;
+    font-family:
+        "DFYuanW7",
+        "Microsoft JhengHei",
+        sans-serif;
+    overflow-x:hidden;
+}
+
+/* Hero */
 
 .hero{
     height:100vh;
+
     background:
     linear-gradient(
         rgba(0,0,0,.25),
@@ -22,99 +31,178 @@ body{
     url("images/hero.jpg");
 
     background-size:cover;
-    background-position:center;
+    background-position:center center;
 
     display:flex;
     align-items:center;
     justify-content:center;
+
+    position:relative;
+}
+
+.hero::after{
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+    left:0;
+
+    width:100%;
+    height:120px;
+
+    background:
+    linear-gradient(
+        to top,
+        #faf7f2,
+        transparent
+    );
 }
 
 .hero-content{
     text-align:center;
     color:white;
+    z-index:2;
 }
 
 .hero h1{
-    font-size:52px;
-    line-height:1.5;
+    font-size:68px;
     font-weight:300;
+    letter-spacing:4px;
+    line-height:1.5;
+
+    text-shadow:
+    0 4px 20px rgba(0,0,0,.35);
 }
 
 .hero-date{
+
     margin-top:24px;
+
     font-size:24px;
-    letter-spacing:4px;
+
+    letter-spacing:6px;
 }
 
 .scroll{
-    margin-top:40px;
+
+    margin-top:50px;
+
+    font-size:14px;
+
     opacity:.8;
 }
 
+/* Invitation */
+
 .invitation{
 
-    background:white;
-    padding:80px 24px;
+    padding:120px 30px;
+
     text-align:center;
 }
 
 .invitation h2{
-    font-size:38px;
-    margin-bottom:30px;
-    color:#B79E85;
+
+    color:#c8a98a;
+
+    font-size:42px;
+
+    margin-bottom:40px;
 }
 
 .invitation p{
-    line-height:2;
-    max-width:600px;
+
+    line-height:2.2;
+
+    max-width:700px;
+
     margin:auto;
+
+    font-size:18px;
 }
+
+/* Story */
 
 .story{
 
-    padding:80px 24px;
+    padding:120px 30px;
 }
 
 .story h2{
 
     text-align:center;
-    margin-bottom:40px;
-    color:#B79E85;
+
+    font-size:42px;
+
+    color:#c8a98a;
+
+    margin-bottom:50px;
 }
 
 .story-grid{
 
     display:grid;
-    grid-template-columns:1fr;
-    gap:24px;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    max-width:1200px;
+
+    margin:auto;
 }
 
 .story-card{
 
     background:white;
-    border-radius:20px;
+
+    border-radius:24px;
+
     overflow:hidden;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+
+    transition:.35s;
+}
+
+.story-card:hover{
+
+    transform:translateY(-8px);
 }
 
 .story-card img{
+
     width:100%;
     display:block;
 }
 
 .story-card h3{
+
     text-align:center;
-    padding:16px;
+
+    padding:24px;
+
+    font-size:22px;
+
+    color:#8d7865;
 }
 
-@media(min-width:768px){
+@media(max-width:768px){
 
-.story-grid{
+.hero h1{
 
-grid-template-columns:repeat(3,1fr);
+font-size:46px;
+
+}
+
+.invitation h2,
+.story h2{
+
+font-size:34px;
 
 }
 
 }
-
-</style>
