@@ -206,3 +206,79 @@ font-size:34px;
 }
 
 }
+
+/* Wedding Info */
+
+.info{
+
+    padding:120px 30px;
+
+    text-align:center;
+}
+
+.info h2{
+
+    font-size:42px;
+
+    color:#c8a98a;
+
+    margin-bottom:50px;
+}
+
+.info-card{
+
+    background:white;
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:50px;
+
+    border-radius:30px;
+
+    box-shadow:
+    0 15px 40px rgba(0,0,0,.08);
+}
+
+.info-card h3{
+
+    font-size:32px;
+
+    color:#8d7865;
+
+    margin-bottom:30px;
+}
+
+.info-card p{
+
+    font-size:18px;
+
+    line-height:2;
+
+    margin-bottom:25px;
+}
+
+.map-btn{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    padding:14px 32px;
+
+    background:#c8a98a;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:50px;
+
+    transition:.3s;
+}
+
+.map-btn:hover{
+
+    opacity:.8;
+}
