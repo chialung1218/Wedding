@@ -315,14 +315,23 @@ font-size:34px;
 
 .count-box{
 
-    width:160px;
-    height:160px;
+    width:150px;
+
+    height:150px;
 
     background:white;
 
     padding:25px;
 
     border-radius:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
 
     box-shadow:
     0 15px 40px rgba(0,0,0,.08);
@@ -333,6 +342,8 @@ font-size:34px;
     display:block;
 
     font-size:64px;
+
+    font-weight:600;
 
     color:#8d7865;
 }
@@ -347,7 +358,7 @@ font-size:34px;
 
 .photo-banner{
 
-    height:60vh;
+    height:55vh;
 
     background:
     linear-gradient(
