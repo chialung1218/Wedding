@@ -18,13 +18,17 @@ body{
     overflow-x:hidden;
 }
 
+/* Global Container */
+
 .container{
 
-    max-width:1400px;
+    width:100%;
+
+    max-width:1200px;
 
     margin:0 auto;
 
-    padding:0 40px;
+    padding:0 30px;
 }
 
 
@@ -516,17 +520,4 @@ body{
         0 25px 45px rgba(0,0,0,.12);
 }
 
-
-/* Global Container */
-
-.container{
-
-    width:100%;
-
-    max-width:1200px;
-
-    margin:0 auto;
-
-    padding:0 30px;
-}
 
