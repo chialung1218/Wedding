@@ -374,7 +374,6 @@ body{
 .photo-banner{
 
     width:100%;
-
     max-width:1400px;
 
     height:650px;
@@ -387,9 +386,12 @@ body{
 
     background:url("images/gallery1.jpg");
 
-    background-size:cover;
+    background-size:contain;
+    background-repeat:no-repeat;
 
     background-position:center;
+
+    background-color:#f6f0e8;
 }
 
 .photo-overlay{
