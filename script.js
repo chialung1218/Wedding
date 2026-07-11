@@ -178,6 +178,54 @@ setInterval(()=>{
 
     showSlide(currentSlide);
 
-},3500);
+},4000);
 
 
+let touchStartX = 0;
+let touchEndX = 0;
+
+const slider = document.querySelector(".slider-track");
+
+slider?.addEventListener("touchstart", (e) => {
+
+    touchStartX = e.changedTouches[0].screenX;
+
+});
+
+slider?.addEventListener("touchend", (e) => {
+
+    touchEndX = e.changedTouches[0].screenX;
+
+    handleSwipe();
+
+});
+
+function handleSwipe(){
+
+    const swipeDistance = touchStartX - touchEndX;
+
+    // 左滑
+    if(swipeDistance > 50){
+
+        currentSlide++;
+
+        if(currentSlide >= slides.length){
+            currentSlide = 0;
+        }
+
+        showSlide(currentSlide);
+    }
+
+    // 右滑
+    else if(swipeDistance < -50){
+
+        currentSlide--;
+
+        if(currentSlide < 0){
+            currentSlide = slides.length - 1;
+        }
+
+        showSlide(currentSlide);
+    }
+
+}
