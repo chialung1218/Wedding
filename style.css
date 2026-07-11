@@ -662,7 +662,9 @@ body{
     line-height:2.2;
     }
     
-.story h2,
+.story h2{
+    font-size:34px;
+}
 .story-grid{
 
     grid-template-columns:1fr;
