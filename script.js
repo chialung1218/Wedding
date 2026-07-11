@@ -6,6 +6,18 @@ function updateCountdown() {
 
     const diff = weddingDate - now;
 
+    if(diff <= 0){
+
+    document.getElementById("countdown").innerHTML = `
+        <div class="count-box">
+            <span>❤️</span>
+            <small>Wedding Day</small>
+        </div>
+    `;
+
+    return;
+}
+    
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
 
     const hours = Math.floor(
@@ -65,6 +77,12 @@ document.getElementById("submitBtn")?.addEventListener("click", async () => {
         alert("請輸入姓名");
         return;
     }
+    if(data.attend === "請選擇"){
+    alert("請選擇是否出席");
+    return;
+    }
+
+
 
     const btn = document.getElementById("submitBtn");
 
@@ -81,14 +99,14 @@ document.getElementById("submitBtn")?.addEventListener("click", async () => {
             }
         );
 
+    document.getElementById("rsvpForm").reset();
+
     document.querySelector(".rsvp-form").innerHTML = `
         <div class="success-box">
             <h3>感謝您的回覆 ❤️</h3>
             <p>我們已收到您的出席資訊</p>
         </div>
-`;
-
-        document.getElementById("rsvpForm").reset();
+    `;
 
     } catch (error) {
 
