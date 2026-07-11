@@ -648,7 +648,26 @@ body{
 }
 
 .invitation h2,
+.invitation{
+
+    padding:80px 25px;
+    }
+
+.invitation p{
+
+    font-size:18px;
+
+    line-height:2.2;
+    }
+    
 .story h2,
+.story-grid{
+
+    grid-template-columns:1fr;
+
+    gap:30px;
+    }
+    
 .info h2,
 .countdown h2{
 
@@ -656,25 +675,55 @@ body{
 
 }
 
+
+.info{
+
+    padding:80px 20px;
+    }
+
 .info-card{
 
     padding:35px 25px;
+    }
 
-}
+.info-card h3{
+
+    font-size:24px;
+    }
+
+.info-card p{
+
+    font-size:16px;
+    }
+
+
+
+    
+ .countdown{
+
+    padding:80px 20px;
+    }
+
+    #countdown{
+
+    gap:12px;
+    }
 
 .count-box{
 
-    width:80px;
+    width:70px;
+    height:70px;
 
-    padding:18px;
-
-}
+    padding:10px;
+    }
 
 .count-box span{
 
-    font-size:28px;
+    font-size:24px;
+    }
 
-}
+
+    
 
 .photo-banner{
 
@@ -701,4 +750,29 @@ body{
 
     right:10px;
     }
+
+
+ .rsvp{
+
+    padding:80px 20px;
+    }
+
+.rsvp h2{
+
+    font-size:34px;
+    }
+
+.form-group label{
+
+    font-size:16px;
+    }
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    padding:14px;
+    }
+
+    
 }
