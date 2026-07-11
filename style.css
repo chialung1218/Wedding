@@ -706,17 +706,24 @@ body{
     padding:80px 20px;
     }
 
-    #countdown{
+     #countdown{
 
-    gap:12px;
+    display:flex;
+
+    flex-wrap:nowrap;
+
+    gap:8px;
     }
 
 .count-box{
 
-    width:70px;
-    height:70px;
+    flex:1;
 
-    padding:10px;
+    width:auto;
+
+    max-width:75px;
+
+    height:70px;
     }
 
 .count-box span{
