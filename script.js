@@ -69,11 +69,11 @@ document.getElementById("submitBtn")?.addEventListener("click", async () => {
         phone: document.getElementById("phone").value,
         attend: document.getElementById("attend").value,
         guests: document.getElementById("guests").value,
-        guests_child: document.getElementById("kids").value,
-        child_chair: document.getElementById("childseat").value,
+        kids: document.getElementById("kids").value,
+        childseat: document.getElementById("childseat").value,
         vegetarian: document.getElementById("vegetarian").value,
         paper: document.getElementById("paper").value,
-        paper_address: document.getElementById("address").value,
+        address: document.getElementById("address").value,
         message: document.getElementById("message").value
     };
 
