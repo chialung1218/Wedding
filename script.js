@@ -176,6 +176,6 @@ setInterval(()=>{
 
     showSlide(currentSlide);
 
-},2000);
+},3500);
 
 
