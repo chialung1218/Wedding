@@ -635,7 +635,9 @@ body{
 
 .hero h1{
 
-    font-size:46px;
+    font-size:34px;
+
+    line-height:1.4;
 
 }
 
@@ -728,12 +730,19 @@ body{
 .photo-banner{
 
     height:350px;
+    }
 
-    margin:60px auto;
+.photo-overlay h2{
 
-    border-radius:24px;
+    font-size:32px;
+    }
 
-}
+.photo-overlay p{
+
+    font-size:16px;
+
+    letter-spacing:3px;
+    }
 
 
 .slider-track{
