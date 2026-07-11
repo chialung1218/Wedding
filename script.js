@@ -81,7 +81,12 @@ document.getElementById("submitBtn")?.addEventListener("click", async () => {
             }
         );
 
-        alert("感謝您的回覆 ❤️");
+    document.querySelector(".rsvp-form").innerHTML = `
+        <div class="success-box">
+            <h3>感謝您的回覆 ❤️</h3>
+            <p>我們已收到您的出席資訊</p>
+        </div>
+`;
 
         document.getElementById("rsvpForm").reset();
 
