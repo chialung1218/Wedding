@@ -833,7 +833,11 @@ body{
     right:10px;
     }
 
+.slider-btn{
+    display:none;
+    }
 
+    
  .rsvp{
 
     padding:80px 20px;
