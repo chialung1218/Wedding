@@ -77,6 +77,8 @@ document.getElementById("submitBtn")?.addEventListener("click", async () => {
         message: document.getElementById("message").value
     };
 
+    console.log(data);
+    
     if (!data.name) {
         alert("請輸入姓名");
         return;
