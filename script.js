@@ -73,7 +73,7 @@ document.getElementById("submitBtn")?.addEventListener("click", async () => {
         child_chair: document.getElementById("childseat").value,
         vegetarian: document.getElementById("vegetarian").value,
         paper: document.getElementById("paper").value,
-        paper_address: document.getElementById("paper_address").value,
+        paper_address: document.getElementById("address").value,
         message: document.getElementById("message").value
     };
 
