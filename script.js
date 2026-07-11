@@ -150,6 +150,18 @@ function showSlide(index){
     dots[index].classList.add("active");
 }
 
+dots.forEach((dot,index)=>{
+
+    dot.addEventListener("click",()=>{
+
+        currentSlide = index;
+
+        showSlide(currentSlide);
+
+    });
+
+});
+
 nextBtn?.addEventListener("click",()=>{
 
     currentSlide++;
