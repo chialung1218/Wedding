@@ -129,7 +129,7 @@ document.getElementById("submitBtn")?.addEventListener("click", async () => {
 
 
 const slides = document.querySelectorAll(".slide");
-
+const dotsContainer = document.querySelector(".slider-dots");
 const prevBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 
@@ -199,6 +199,8 @@ setInterval(()=>{
 },4000);
 
 
+//滑動功能
+
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -247,3 +249,30 @@ function handleSwipe(){
     }
 
 }
+
+
+//圓點
+
+slides.forEach((_, index)=>{
+
+    const dot = document.createElement("span");
+
+    dot.classList.add("dot");
+
+    if(index === 0){
+        dot.classList.add("active");
+    }
+
+    dot.addEventListener("click",()=>{
+
+        currentSlide = index;
+
+        showSlide(currentSlide);
+
+    });
+
+    dotsContainer.appendChild(dot);
+
+});
+
+const dots = document.querySelectorAll(".dot");
