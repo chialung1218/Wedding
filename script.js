@@ -135,6 +135,34 @@ const nextBtn = document.querySelector(".next");
 
 let currentSlide = 0;
 
+//圓點
+
+slides.forEach((_, index)=>{
+
+    const dot = document.createElement("span");
+
+    dot.classList.add("dot");
+
+    if(index === 0){
+        dot.classList.add("active");
+    }
+
+    dot.addEventListener("click",()=>{
+
+        currentSlide = index;
+
+        showSlide(currentSlide);
+
+    });
+
+    dotsContainer.appendChild(dot);
+
+});
+
+const dots = document.querySelectorAll(".dot");
+
+//Show Slide
+
 function showSlide(index){
 
     slides.forEach(slide=>{
@@ -150,17 +178,7 @@ function showSlide(index){
     dots[index].classList.add("active");
 }
 
-dots.forEach((dot,index)=>{
-
-    dot.addEventListener("click",()=>{
-
-        currentSlide = index;
-
-        showSlide(currentSlide);
-
-    });
-
-});
+//左右按鈕
 
 nextBtn?.addEventListener("click",()=>{
 
@@ -184,7 +202,7 @@ prevBtn?.addEventListener("click",()=>{
     showSlide(currentSlide);
 });
 
-
+//自動輪播
 
 setInterval(()=>{
 
@@ -199,7 +217,7 @@ setInterval(()=>{
 },4000);
 
 
-//滑動功能
+//手機滑動功能
 
 let touchStartX = 0;
 let touchEndX = 0;
@@ -251,28 +269,4 @@ function handleSwipe(){
 }
 
 
-//圓點
 
-slides.forEach((_, index)=>{
-
-    const dot = document.createElement("span");
-
-    dot.classList.add("dot");
-
-    if(index === 0){
-        dot.classList.add("active");
-    }
-
-    dot.addEventListener("click",()=>{
-
-        currentSlide = index;
-
-        showSlide(currentSlide);
-
-    });
-
-    dotsContainer.appendChild(dot);
-
-});
-
-const dots = document.querySelectorAll(".dot");
