@@ -523,6 +523,41 @@ body{
     transition:.3s;
 }
 
+.slider-dots{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:12px;
+
+    margin-top:25px;
+}
+
+.dot{
+
+    width:10px;
+    height:10px;
+
+    border-radius:50%;
+
+    background:#d8cfc5;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.dot.active{
+
+    background:#c8a98a;
+
+    transform:scale(1.25);
+}
+
+
+
+
 .slider-btn:hover{
 
     background:white;
