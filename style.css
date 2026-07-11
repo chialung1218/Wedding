@@ -212,68 +212,7 @@ body{
     color:#8d7865;
 }
 
-@media(max-width:768px){
 
-.hero{
-
-    height:100vh;
-
-}
-
-.hero h1{
-
-    font-size:46px;
-
-}
-
-.hero-date{
-
-    font-size:20px;
-
-    letter-spacing:3px;
-
-}
-
-.invitation h2,
-.story h2,
-.info h2,
-.countdown h2{
-
-    font-size:34px;
-
-}
-
-.info-card{
-
-    padding:35px 25px;
-
-}
-
-.count-box{
-
-    width:80px;
-
-    padding:18px;
-
-}
-
-.count-box span{
-
-    font-size:28px;
-
-}
-
-.photo-banner{
-
-    height:350px;
-
-    margin:60px auto;
-
-    border-radius:24px;
-
-}
-
-}
 
 /* Wedding Info */
 
@@ -574,23 +513,7 @@ body{
     right:-25px;
 }
 
-@media(max-width:768px){
 
-    .slider-track{
-
-        height:450px;
-    }
-
-    .prev{
-
-        left:10px;
-    }
-
-    .next{
-
-        right:10px;
-    }
-}
 
 
 /* ======================
@@ -691,4 +614,91 @@ body{
 .rsvp button:hover{
 
     opacity:.85;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:768px){
+
+.hero{
+
+    height:100vh;
+
+}
+
+.hero h1{
+
+    font-size:46px;
+
+}
+
+.hero-date{
+
+    font-size:20px;
+
+    letter-spacing:3px;
+
+}
+
+.invitation h2,
+.story h2,
+.info h2,
+.countdown h2{
+
+    font-size:34px;
+
+}
+
+.info-card{
+
+    padding:35px 25px;
+
+}
+
+.count-box{
+
+    width:80px;
+
+    padding:18px;
+
+}
+
+.count-box span{
+
+    font-size:28px;
+
+}
+
+.photo-banner{
+
+    height:350px;
+
+    margin:60px auto;
+
+    border-radius:24px;
+
+}
+
+
+.slider-track{
+
+    height:450px;
+    }
+
+.prev{
+
+    left:10px;
+    }
+
+.next{
+
+    right:10px;
+    }
 }
