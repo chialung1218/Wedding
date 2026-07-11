@@ -69,7 +69,11 @@ document.getElementById("submitBtn")?.addEventListener("click", async () => {
         phone: document.getElementById("phone").value,
         attend: document.getElementById("attend").value,
         guests: document.getElementById("guests").value,
+        guests_child: document.getElementById("kids").value,
+        child_chair: document.getElementById("childseat").value,
         vegetarian: document.getElementById("vegetarian").value,
+        paper: document.getElementById("paper").value,
+        paper_address: document.getElementById("paper_address").value,
         message: document.getElementById("message").value
     };
 
