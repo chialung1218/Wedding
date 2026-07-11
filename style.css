@@ -815,5 +815,10 @@ body{
     padding:14px;
     }
 
+.slider-btn{
+    display:none;
+    }
+
+    
     
 }
