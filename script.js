@@ -179,13 +179,3 @@ setInterval(()=>{
 },2000);
 
 
-
-document.getElementById("paper")
-.addEventListener("change", function(){
-
-    document.getElementById("addressGroup")
-        .style.display =
-        this.value === "是"
-        ? "block"
-        : "none";
-});
