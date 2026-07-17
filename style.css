@@ -432,6 +432,13 @@ body{
 }
 
 
+
+
+
+
+
+
+
 /* ======================
    Gallery
 ====================== */
@@ -685,7 +692,67 @@ body{
 }
 
 
+/* ======================
+   Message
+====================== */
 
+.message{
+
+    padding:120px 30px;
+
+    text-align:center;
+}
+
+.message h2{
+
+    font-family:"Iansui", serif;
+
+    font-size:48px;
+
+    color:#c8a98a;
+
+    margin-bottom:50px;
+}
+
+.message-card{
+
+    max-width:800px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:70px 60px;
+
+    border-radius:30px;
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.08);
+
+    line-height:2.2;
+
+    color:#7b6b5b;
+
+    font-size:20px;
+
+    text-align:left;
+}
+
+.message-card p{
+
+    margin-bottom:20px;
+}
+
+.message-sign{
+
+    margin-top:50px;
+
+    text-align:right;
+
+    color:#8d7865;
+
+    line-height:1.8;
+}
 
 
 
@@ -872,6 +939,33 @@ body{
     display:none;
     }
 
+.message{
+
+    padding:80px 20px;
+}
+
+.message h2{
+
+    font-size:34px;
+
+    margin-bottom:35px;
+}
+
+.message-card{
+
+    padding:35px 25px;
+
+    font-size:16px;
+
+    line-height:2;
+}
+
+.message-sign{
+
+    margin-top:35px;
+}
+
+    
     
     
 }
