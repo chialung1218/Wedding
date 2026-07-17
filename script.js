@@ -67,11 +67,13 @@ document.getElementById("submitBtn")?.addEventListener("click", async () => {
     const data = {
         name: document.getElementById("name").value,
         phone: document.getElementById("phone").value,
+        relationship: document.getElementById("relationship").value,
         attend: document.getElementById("attend").value,
         guests: document.getElementById("guests").value,
         kids: document.getElementById("kids").value,
         childseat: document.getElementById("childseat").value,
-        vegetarian: document.getElementById("vegetarian").value,
+        adult_vegetarian: document.getElementById("adult_vegetarian").value,
+        kid_vegetarian: document.getElementById("kid_vegetarian").value,
         paper: document.getElementById("paper").value,
         address: document.getElementById("address").value,
         message: document.getElementById("message").value
