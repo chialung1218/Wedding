@@ -764,7 +764,11 @@ body{
     line-height:1.8;
 }
 
+.message-text span{
 
+    display:block;
+
+}
 
 
 
