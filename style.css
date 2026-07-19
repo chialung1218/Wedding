@@ -134,7 +134,7 @@ body{
     margin-bottom:40px;
 }
 
-.invitation p{
+.invitation-text{
 
     line-height:2.4;
 
@@ -145,12 +145,13 @@ body{
     font-size:24px;
 
     color:#7b6b5b;
+
+    text-align:center;
 }
 
 .invitation-text span{
 
     display:block;
-
 }
 
 
@@ -762,6 +763,12 @@ body{
     color:#8d7865;
 
     line-height:1.8;
+}
+
+.message-text{
+
+    text-align:center;
+
 }
 
 .message-text span{
