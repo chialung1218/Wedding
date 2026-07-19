@@ -106,14 +106,6 @@ body{
     letter-spacing:6px;
 }
 
-.scroll{
-
-    margin-top:50px;
-
-    font-size:14px;
-
-    opacity:.8;
-}
 
 /* Invitation */
 
@@ -767,7 +759,7 @@ body{
 
 .message-text{
 
-    text-align:center;
+    text-align:left;
 
 }
 
@@ -815,12 +807,12 @@ body{
     font-size:34px;
 }
 
-.invitation p{
+.invitation-text{
 
     font-size:18px;
 
     line-height:2.2;
-    }
+}
     
 .story h2{
     font-size:34px;
@@ -956,9 +948,6 @@ body{
     padding:14px;
     }
 
-.slider-btn{
-    display:none;
-    }
 
 .message{
 
