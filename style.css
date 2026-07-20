@@ -438,18 +438,22 @@ body{
 
 
 
-/* ======================
-   Timeline
-====================== */
+/* =====================================================
+   Wedding Timeline
+===================================================== */
 
 .timeline{
 
+    position:relative;
+
     padding:120px 30px;
 
-    position:relative;
+    background:#fdfaf7;
 
     overflow:hidden;
 }
+
+/* 背景裝飾 */
 
 .timeline::before{
 
@@ -457,14 +461,16 @@ body{
 
     position:absolute;
 
-    top:80px;
+    top:60px;
     left:8%;
 
-    font-size:70px;
+    font-size:80px;
 
-    color:#efe4d8;
+    color:#efe3d7;
 
-    transform:rotate(-15deg);
+    transform:rotate(-20deg);
+
+    opacity:.55;
 }
 
 .timeline::after{
@@ -474,58 +480,166 @@ body{
     position:absolute;
 
     right:8%;
-    bottom:80px;
+    bottom:60px;
 
-    font-size:80px;
+    font-size:90px;
 
-    color:#f2e8de;
+    color:#efe3d7;
 
-    transform:rotate(15deg);
+    transform:rotate(18deg);
+
+    opacity:.55;
 }
+
+/* 標題 */
 
 .timeline h2{
 
-    font-family:"Iansui",serif;
+    font-size:48px;
+
+    color:#b89072;
 
     text-align:center;
 
-    font-size:48px;
-
-    color:#c8a98a;
-
-    margin-bottom:60px;
+    margin-bottom:12px;
 }
+
+.timeline-subtitle{
+
+    text-align:center;
+
+    color:#9b8b7b;
+
+    margin-bottom:80px;
+
+    font-size:18px;
+
+    letter-spacing:1px;
+}
+
+/* 中央時間線 */
+
+.timeline-wrapper{
+
+    position:relative;
+
+    max-width:1100px;
+
+    margin:auto;
+}
+
+.timeline-wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    top:0;
+
+    width:3px;
+
+    height:100%;
+
+    background:#ead8c6;
+
+    transform:translateX(-50%);
+}
+
+/* 每一列 */
+
+.timeline-row{
+
+    width:50%;
+
+    position:relative;
+
+    margin-bottom:80px;
+}
+
+.timeline-row.left{
+
+    left:0;
+
+    padding-right:70px;
+}
+
+.timeline-row.right{
+
+    left:50%;
+
+    padding-left:70px;
+}
+
+/* 中央圓點 */
+
+.timeline-row::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:48px;
+
+    width:18px;
+
+    height:18px;
+
+    border-radius:50%;
+
+    background:#c8a98a;
+
+    border:5px solid white;
+
+    box-shadow:0 0 0 5px #f6eee6;
+}
+
+.timeline-row.left::before{
+
+    right:-10px;
+}
+
+.timeline-row.right::before{
+
+    left:-10px;
+}
+
+/* 卡片 */
 
 .timeline-card{
 
     background:white;
 
-    border-radius:32px;
+    border-radius:28px;
 
-    padding:60px;
+    padding:35px;
 
-    max-width:950px;
+    box-shadow:0 18px 45px rgba(0,0,0,.08);
 
-    margin:auto;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    transition:.35s;
 }
 
-.timeline-item{
+.timeline-card:hover{
 
-    text-align:center;
+    transform:translateY(-8px);
+
+    box-shadow:0 28px 55px rgba(0,0,0,.12);
 }
+
+/* icon */
 
 .timeline-icon{
 
-    width:80px;
-    height:80px;
+    width:78px;
+
+    height:78px;
 
     margin:auto;
 
     border-radius:50%;
 
-    background:#faf2e8;
+    background:#faf2ea;
 
     display:flex;
 
@@ -533,49 +647,68 @@ body{
 
     align-items:center;
 
-    font-size:36px;
+    font-size:34px;
+
+    transition:.35s;
 }
+
+.timeline-card:hover .timeline-icon{
+
+    transform:scale(1.15);
+}
+
+/* 時間 */
 
 .timeline-time{
 
+    display:block;
+
     margin-top:18px;
 
-    font-size:26px;
+    text-align:center;
+
+    font-size:28px;
+
+    color:#b58d6f;
 
     font-weight:600;
-
-    color:#b48b66;
 
     letter-spacing:2px;
 }
 
-.timeline-item h3{
+/* 標題 */
 
-    margin-top:15px;
+.timeline-card h3{
 
-    font-size:24px;
-
-    color:#8d7865;
-}
-
-.timeline-item p{
-
-    margin-top:12px;
-
-    color:#7b6b5b;
-
-    line-height:1.8;
-}
-
-.timeline-divider{
+    margin-top:18px;
 
     text-align:center;
 
+    color:#7d6756;
+
     font-size:26px;
+}
 
-    color:#d8c6b5;
+/* 說明 */
 
-    margin:30px 0;
+.timeline-card p{
+
+    margin-top:14px;
+
+    text-align:center;
+
+    color:#8d8277;
+
+    line-height:1.9;
+}
+
+/* Hover時時間線變色 */
+
+.timeline-row:hover::before{
+
+    background:#d2b08c;
+
+    transform:scale(1.25);
 }
 
 
