@@ -631,34 +631,46 @@ body{
 
 .timeline-icon{
 
-    width:78px;
-    height:78px;
+    width:82px;
 
-    background:#faf3eb;
+    height:82px;
+
+    margin:auto;
 
     border-radius:50%;
+
+    background:#faf4ee;
 
     display:flex;
 
     justify-content:center;
 
     align-items:center;
+
+    transition:.35s;
 }
 
 .timeline-icon img{
 
-    width:38px;
+    width:42px;
 
-    height:38px;
+    height:42px;
 
     opacity:.82;
 
     transition:.35s;
 }
 
-.timeline-card:hover img{
+.timeline-card:hover .timeline-icon{
 
-    transform:scale(1.12);
+    transform:translateY(-4px);
+
+    background:#f7ede4;
+}
+
+.timeline-card:hover .timeline-icon img{
+
+    transform:scale(1.08);
 }
 
 
