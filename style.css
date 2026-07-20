@@ -1214,6 +1214,8 @@ body{
     }
 
 
+/* Timeline */
+
 .timeline{
 
     padding:80px 20px;
@@ -1221,30 +1223,63 @@ body{
 
 .timeline h2{
 
-    font-size:34px;
+    font-size:36px;
+}
+
+.timeline-subtitle{
+
+    font-size:16px;
+
+    margin-bottom:50px;
+}
+
+.timeline-wrapper::before{
+
+    left:24px;
+}
+
+.timeline-row{
+
+    width:100%;
+
+    left:0!important;
+
+    padding-left:70px;
+
+    padding-right:0;
+
+    margin-bottom:50px;
+}
+
+.timeline-row::before{
+
+    left:15px!important;
+
+    right:auto;
 }
 
 .timeline-card{
 
-    padding:35px 25px;
+    padding:28px;
+}
+
+.timeline-card h3{
+
+    font-size:22px;
+}
+
+.timeline-time{
+
+    font-size:24px;
 }
 
 .timeline-icon{
 
     width:65px;
+
     height:65px;
 
     font-size:28px;
-}
-
-.timeline-time{
-
-    font-size:22px;
-}
-
-.timeline-item h3{
-
-    font-size:20px;
 }
 
 
