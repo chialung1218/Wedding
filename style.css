@@ -632,30 +632,35 @@ body{
 .timeline-icon{
 
     width:78px;
-
     height:78px;
 
-    margin:auto;
+    background:#faf3eb;
 
     border-radius:50%;
-
-    background:#faf2ea;
 
     display:flex;
 
     justify-content:center;
 
     align-items:center;
+}
 
-    font-size:34px;
+.timeline-icon img{
+
+    width:38px;
+
+    height:38px;
+
+    opacity:.82;
 
     transition:.35s;
 }
 
-.timeline-card:hover .timeline-icon{
+.timeline-card:hover img{
 
-    transform:scale(1.15);
+    transform:scale(1.12);
 }
+
 
 /* 時間 */
 
