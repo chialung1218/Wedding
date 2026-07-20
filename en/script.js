@@ -76,8 +76,6 @@ document.getElementById("submitBtn")?.addEventListener("click", async () => {
         kid_vegetarian: document.getElementById("kid_vegetarian").value,
         paper: document.getElementById("paper").value,
         address: document.getElementById("address").value,
-        epaper: document.getElementById("epaper").value,
-        email: document.getElementById("email").value,
         message: document.getElementById("message").value
     };
 
